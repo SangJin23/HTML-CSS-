@@ -1,0 +1,10 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.util.Iterator"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.util.Scanner"/></lhs><lhs name\="com.sangjin.demo.repository.ObjectRepository"><rhs name\="com.sangjin.demo.repository.ObjectRepository"/></lhs><lhs name\="com.sangjin.demo.service.MainService"><rhs name\="com.sangjin.demo.service.MainService"/></lhs><lhs name\="basicPractice.hr.etity.EmployeeEntity"><rhs name\="basicPractice.hr.etity.EmployeeEntity"/></lhs><lhs name\="basicPractice.hr.controller.MainController"><rhs name\="basicPractice.hr.controller.implement.MainControllerImplement"/></lhs><lhs name\="basicPractice.hr.service.MainService"><rhs name\="basicPractice.hr.service.implement.MainServiceImplement"/></lhs><lhs name\="basicPractice.hr.repository.EmployeeRepositiory"><rhs name\="basicPractice.hr.repository.implement.EmployeeRepositoryImplement"/></lhs><lhs name\="basicPractice.hr.dto.PostEmplyeeRequestDto"><rhs name\="basicPractice.hr.dto.PostEmplyeeRequestDto"/></lhs><lhs name\="basicPractice.hr.dto.GetEmployeeResponseDto"><rhs name\="basicPractice.hr.dto.GetEmployeeResponseDto"/></lhs><lhs name\="basicPractice.hr.dto.PatchEmplyeeRequestDto"><rhs name\="basicPractice.hr.dto.PatchEmplyeeRequestDto"/></lhs><lhs name\="java.lang.Throwable"><rhs name\="java.lang.Exception"/></lhs><lhs name\="java.lang.Exception"><rhs name\="java.lang.Exception"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=23
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

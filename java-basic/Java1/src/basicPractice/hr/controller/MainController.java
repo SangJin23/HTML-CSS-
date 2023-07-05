@@ -1,0 +1,20 @@
+package basicPractice.hr.controller;
+
+import basicPractice.hr.dto.GetEmployeeListDto;
+import basicPractice.hr.dto.GetEmployeeResponseDto;
+
+import basicPractice.hr.dto.PatchEmplyeeRequestDto;
+import basicPractice.hr.dto.PostEmplyeeRequestDto;
+
+public interface MainController {
+	
+	void postEmployee(PostEmplyeeRequestDto dto);
+	void getEmployeeList();
+	void getEmployee(String employeeNumber);
+	void patchEmployee(PatchEmplyeeRequestDto dto);
+	void deleteEmplyee(String employeeNumber);
+	void postEmplyee(PostEmplyeeRequestDto dto);
+	
+	}
+
+

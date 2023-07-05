@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
+    <fullyQualifiedTypeName name="chapter3.OopTest2"/>
+    <fullyQualifiedTypeName name="basicPractice.CurrencyExchage"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="chapter3.Human"/>
+    <fullyQualifiedTypeName name="chapter3.Police"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="chapter3.Developer"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar"/>
+    <fullyQualifiedTypeName name="chapter3etc.ExampleClass1"/>
+    <fullyQualifiedTypeName name="chapter3.SuperFinalClass"/>
+    <fullyQualifiedTypeName name="chapter3.SuperClass"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.sangjin.demo.repository.ObjectRepository"/>
+    <fullyQualifiedTypeName name="com.sangjin.demo.controler.MainController"/>
+    <fullyQualifiedTypeName name="com.sangjin.demo.service.MainService"/>
+    <fullyQualifiedTypeName name="com.sangjin.demo.repository.Repository"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.dto.CreateEmplyeeRequestDto"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.controller.implement.MainControllerImplement"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.service.MainService"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.service.implement.MainServiceImplement"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.dto.PostEmplyeeRequestDto"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.repository.implement.EmployeeRepositoryImplement"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.controller.MainController"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.dto.GetEmployeeListDto"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.dto.GetEmployeeResponseDto"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.dto.PatchEmplyeeRequestDto"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.etity.EmployeeEntity"/>
+    <fullyQualifiedTypeName name="basicPractice.hr.repository.EmployeeRepositiory"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

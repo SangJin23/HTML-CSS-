@@ -1,0 +1,54 @@
+package basicPractice.hr.service.implement;
+
+import basicPractice.hr.dto.GetEmployeeListDto;
+import basicPractice.hr.dto.GetEmployeeResponseDto;
+import basicPractice.hr.dto.PatchEmplyeeRequestDto;
+import basicPractice.hr.dto.PostEmplyeeRequestDto;
+import basicPractice.hr.etity.EmployeeEntity;
+import basicPractice.hr.repository.EmployeeRepositiory;
+import basicPractice.hr.service.MainService;
+
+public class MainServiceImplement implements MainService {
+	
+	private final EmployeeRepositiory employeeRepositiory;
+	
+	public MainServiceImplement(EmployeeRepositiory employeeRepositiory) {
+		this.employeeRepositiory = employeeRepositiory;
+	}
+
+	@Override
+	public boolean postEmployee(PostEmplyeeRequestDto dto) {
+		// 입력한 데이터를 저장소에 저장
+	
+		EmployeeEntity employeeEntity = new EmployeeEntity(dto);
+		boolean result = employeeRepositiory.save(employeeEntity);
+		return result;
+	}
+
+	@Override
+	public GetEmployeeListDto[] getEmployeeList() {
+		EmployeeEntity[] employeeEntityList = employeeRepositiory.findAll();
+		
+		GetEmployeeListDto[] result = getEmployeeList().copyList(employeeEntityList);
+		return result
+	}
+
+	@Override
+	public GetEmployeeResponseDto getEmployee(String employeeNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean patchEmployee(PatchEmplyeeRequestDto dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteEmplyee(String employeeNumber) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

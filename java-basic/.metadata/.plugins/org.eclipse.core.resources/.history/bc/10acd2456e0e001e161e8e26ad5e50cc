@@ -1,0 +1,69 @@
+package basicPractice.hr.service.implement;
+
+import basicPractice.hr.dto.GetEmployeeListDto;
+import basicPractice.hr.dto.GetEmployeeResponseDto;
+import basicPractice.hr.dto.PatchEmplyeeRequestDto;
+import basicPractice.hr.dto.PostEmplyeeRequestDto;
+import basicPractice.hr.etity.EmployeeEntity;
+import basicPractice.hr.repository.EmployeeRepositiory;
+import basicPractice.hr.service.MainService;
+
+public class MainServiceImplement implements MainService {
+	
+	private final EmployeeRepositiory employeeRepositiory;
+	
+	public MainServiceImplement(EmployeeRepositiory employeeRepositiory) {
+		this.employeeRepositiory = employeeRepositiory;
+	}
+
+	@Override
+	public boolean postEmployee(PostEmplyeeRequestDto dto) {
+		// 입력한 데이터를 저장소에 저장
+	
+		EmployeeEntity employeeEntity = new EmployeeEntity(dto);
+		boolean result = employeeRepositiory.save(employeeEntity);
+		return result;
+	}
+
+	@Override
+	public GetEmployeeListDto[] getEmployeeList() {
+		EmployeeEntity[] employeeEntityList = employeeRepositiory.findAll();
+		
+		GetEmployeeListDto[] result = new GetEmployeeListDto[5];
+		for(int index = 0; index <result.length; index++) {
+			
+			EmployeeEntity employeeEntity = employeeEntityList[index];
+			
+			GetEmployeeListDto item = new GetEmployeeListDto();
+			item.setEmployeeNumber(employeeEntity.getEmployeeNumber());
+			item.setName(employeeEntity.getName());
+			item.setEmail(employeeEntity.getEmail());
+			item.setAddress(employeeEntity.getAddress());
+			item.setBirth(employeeEntity.getBirth());
+			item.setDepartment(employeeEntity.getDepartment());
+			
+			result[index] = item;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public GetEmployeeResponseDto getEmployee(String employeeNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean patchEmployee(PatchEmplyeeRequestDto dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteEmplyee(String employeeNumber) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,55 @@
+package basicPractice.hr.repository.implement;
+
+import basicPractice.hr.etity.EmployeeEntity;
+import basicPractice.hr.repository.EmployeeRepositiory;
+
+public class EmployeeRepositoryImplement implements EmployeeRepositiory {
+
+	@Override
+	public boolean save(EmployeeEntity employeeEntity) {
+		EmployeeEntity[] list = EmployeeRepositiory.employeeList;
+		
+		boolean result = false;
+		
+		for(int index =0; index <list.length; index++) {
+			if(list[index] == null) {
+				list[index] = employeeEntity;
+				result = true;
+				break;
+			}
+			
+		}
+			return result;
+	}
+		
+
+	@Override
+	public EmployeeEntity[] findAll() {
+		EmployeeEntity[] result = EmployeeRepositiory.employeeList;
+		return result;
+	}
+
+	@Override
+	public EmployeeEntity findByEmployeeNumber(String employeeNumber) {
+		EmployeeEntity result = null;
+		
+		EmployeeEntity[] employeeList = EmployeeRepositiory.employeeList;
+		for(EmployeeEntity employeeEntity :employeeList ) {
+			boolean isEqualEmployeeNumber =
+					employeeEntity.getEmployeeNumber().equals(employeeNumber);
+			if(isEqualEmployeeNumber) {
+				result =  employeeEntity;
+				break;
+			}
+		}
+		
+		return result;
+	}
+
+	@Override
+	public boolean delete(EmployeeEntity employeeEntity) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
